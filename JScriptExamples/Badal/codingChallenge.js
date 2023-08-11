@@ -6,11 +6,13 @@
 var mark_mass = 78;
 var mark_height = 1.69;
 var mark_BMI = mark_mass / (mark_height * mark_height);
+console.log(`Mark's BMI is ${mark_BMI}`);
 
 // For John
 var john_mass = 92;
 var john_height = 1.95;
 var john_BMI = john_mass / (john_height * john_height);
+console.log(`John's BMI is ${john_BMI}`);
 
 var markHigherBMI = mark_BMI > john_BMI;
 console.log(markHigherBMI);
@@ -21,11 +23,13 @@ console.log(markHigherBMI);
 var mark_mass = 95;
 var mark_height = 1.88;
 var mark_BMI = mark_mass / (mark_height * mark_height);
+console.log(`Mark's BMI is ${mark_BMI}`);
 
 // For John
 var john_mass = 85;
 var john_height = 1.76;
 var john_BMI = john_mass / (john_height * john_height);
+console.log(`John's BMI is ${john_BMI}`);
 
 var markHigherBMI = mark_BMI > john_BMI;
 console.log(markHigherBMI);
@@ -33,9 +37,13 @@ console.log(markHigherBMI);
 // Coding Challenge 2
 
 if (markHigherBMI) {
+  console.log("Mark's BMI is higher than John's!");
+} else {
+  console.log("John's BMI is higher than Mark's!");
+}
+
+if (markHigherBMI) {
   console.log(`Mark's BMI(${mark_BMI}) is higher than John's (${john_BMI})!`);
 } else {
   console.log(`John's BMI(${john_BMI}) is higher than Mark's (${mark_BMI})!`);
 }
-
-// Coding Challenge 3
