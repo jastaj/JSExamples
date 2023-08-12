@@ -8,8 +8,15 @@ console.log("Mark's BMI : "+BMI_1);
 var BMI_2=John_Wg/(John_Hg*John_Hg); //JOHN BMI
 console.log("John's BMI : "+BMI_2);
 let markHigherBMI=BMI_1>BMI_2;
+// if (markHigherBMI==true)
+// console.log('Mark has higher BMI');
+// else
+// console.log('John has higher BMI');
+
+// ---- CHALLANGE 2 (USING TEMPLATE LITERALS) ----
+
 if (markHigherBMI==true)
-console.log('Mark has higher BMI');
+console.log(`Mark's BMI: ${BMI_1} is higher than John's BMI:${BMI_2}`);
 else
-console.log('John has higher BMI');
+console.log(`John's BMI:${BMI_2} is higher than  Mark's BMI:${BMI_1}`);
 
