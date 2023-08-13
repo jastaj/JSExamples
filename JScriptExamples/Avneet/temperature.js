@@ -1,6 +1,6 @@
 // temperature changes celsius to Fahrenheit
 
-var celsius=parseInt(prompt('Enter a celsius value:'));
+var celsius=parseFloat(prompt('Enter a celsius value:'));
 fahrenheit=(celsius * 9/5)+ 32;
 console.log("The value of the temperature in Fahrenheit is "+fahrenheit);
 
