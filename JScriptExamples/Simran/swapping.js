@@ -1,20 +1,23 @@
-// var num1=prompt('Enter first number:');
+// Using document.write
+var num1=prompt('Enter first number:');
 
-// var num2=prompt('Enter second number:');
+var num2=prompt('Enter second number:');
 
-// document.write('\nValues before swapping');
-// document.write('\n*******************************');
-// document.write('\nFirst number is '+num1);
-// document.write('\nSecond number is '+num2);
+document.write('Values before swapping'+'<br>');
+document.write('*******************************'+'<br>');
+document.write('First number is '+num1+'<br>');
+document.write('Second number is '+num2+'<br>'+'<br>');
 
-// var temp=num2;
-// num2=num1;
-// num1=temp;
+var temp=num2;
+num2=num1;
+num1=temp;
 
-// document.write('\nValues after Swapping');
-// document.write('\n*******************************');
-// document.write('\nFirst number is '+num1);
-// document.write('\nSecond number is '+num2);
+document.write('Values after Swapping'+'<br>');
+document.write('*******************************'+'<br>');
+document.write('First number is '+num1+'<br>');
+document.write('Second number is '+num2+'<br>');
+
+// Using Console.log
 
 var number1=prompt('Enter first number:');
 
