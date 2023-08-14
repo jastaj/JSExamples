@@ -17,7 +17,7 @@ document.write('*******************************'+'<br>');
 document.write('First number is '+num1+'<br>');
 document.write('Second number is '+num2+'<br>');
 
-// Using Console.log
+// Using console.log
 
 var number1=prompt('Enter first number:');
 
