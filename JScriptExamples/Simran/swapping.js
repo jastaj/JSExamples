@@ -1,7 +1,7 @@
 // Using document.write
-var num1=prompt('Enter first number:');
+var num1=parseInt(prompt('Enter first number:'));
 
-var num2=prompt('Enter second number:');
+var num2=parseInt(prompt('Enter second number:'));
 
 document.write('Values before swapping'+'<br>');
 document.write('*******************************'+'<br>');
@@ -19,9 +19,9 @@ document.write('Second number is '+num2+'<br>');
 
 // Using console.log
 
-var number1=prompt('Enter first number:');
+var number1=parseInt(prompt('Enter first number:'));
 
-var number2=prompt('Enter second number:');
+var number2=parseInt(prompt('Enter second number:'));
 
 console.log('Values before swapping');
 console.log('*******************************');
