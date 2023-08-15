@@ -8,3 +8,31 @@ else
 {
     console.log('Second number is greater');
 }
+
+//Even or odd
+
+var num=parseInt(prompt('Enter a number'));
+
+if(num%2==0)
+{
+    console.log('Number is even');
+}
+else
+{
+    console.log('Number is odd');
+}
+
+//Positive or negative
+
+//Even or odd
+
+var num3=parseInt(prompt('Enter a number'));
+
+if(num3>=0)
+{
+    console.log('Number is positive');
+}
+else
+{
+    console.log('Number is negative');
+}
