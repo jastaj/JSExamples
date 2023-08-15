@@ -2,102 +2,85 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dolphins and Koalas</title>
-  </head>
-  <body>
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta
-          name="viewport"
-          content="width=device-width,
+    <meta
+      name="viewport"
+      content="width=device-width,
 
 initial-scale=1.0"
-        />
+    />
 
-        <title>Coding Challenge 3</title>
-      </head>
-      <body>
-        <script>
-          // Coding Challenge 3
-          // For Dolphins
-          var dolphinScore1 = parseInt(prompt("Enter Score 1 for Dolphins: "));
+    <title>Coding Challenge 3</title>
+  </head>
+  <body>
+    <script>
+      // Coding Challenge 3
+      // For Dolphins
+      var dolphinScore1 = parseInt(prompt("Enter Score 1 for Dolphins: "));
 
-          var dolphinScore2 = parseInt(prompt("Enter Score 2 for Dolphins : "));
+      var dolphinScore2 = parseInt(prompt("Enter Score 2 for Dolphins : "));
 
-          var dolphinScore3 = parseInt(prompt("Enter Score 3 for Dolphins : "));
+      var dolphinScore3 = parseInt(prompt("Enter Score 3 for Dolphins : "));
 
-          if (
-            dolphinScore1 >= 100 &&
-            dolphinScore2 >= 100 &&
-            dolphinScore3 >= 100
-          ) {
-            console.log("Dolphins - All scores are greater than 100.");
-            var dolphins_avg =
-              (dolphinScore1 + dolphinScore2 + dolphinScore3) / 3;
-            var isHundredDolphins = true;
-          } else {
-            console.log("Dolphins - All scores are not Greater than 100.");
-          }
-          // For Koalas
-          var koalaScore1 = parseInt(prompt("Enter Score 1 for Koalas : "));
+      if (
+        dolphinScore1 >= 100 &&
+        dolphinScore2 >= 100 &&
+        dolphinScore3 >= 100
+      ) {
+        console.log("Dolphins - All scores are greater than 100.");
+        var dolphins_avg = (dolphinScore1 + dolphinScore2 + dolphinScore3) / 3;
+        var isHundredDolphins = true;
+      } else {
+        console.log("Dolphins - All scores are not Greater than 100.");
+      }
+      // For Koalas
+      var koalaScore1 = parseInt(prompt("Enter Score 1 for Koalas : "));
 
-          var koalaScore2 = parseInt(prompt("Enter Score 2 for Koalas : "));
+      var koalaScore2 = parseInt(prompt("Enter Score 2 for Koalas : "));
 
-          var koalaScore3 = parseInt(prompt("Enter Score 3 for Koalas : "));
+      var koalaScore3 = parseInt(prompt("Enter Score 3 for Koalas : "));
 
-          if (koalaScore1 >= 100 && koalaScore2 >= 100 && koalaScore3 >= 100) {
-            console.log("Koalas - All scores are greater than 100.");
-            var koalas_avg = (koalaScore1 + koalaScore2 + koalaScore3) / 3;
+      if (koalaScore1 >= 100 && koalaScore2 >= 100 && koalaScore3 >= 100) {
+        console.log("Koalas - All scores are greater than 100.");
+        var koalas_avg = (koalaScore1 + koalaScore2 + koalaScore3) / 3;
 
-            var dolphins_avg =
-              (dolphinScore1 + dolphinScore2 + dolphinScore3) / 3;
-            var isHundredKoalas = true;
-          } else {
-            console.log("Koalas - All scores are not Greater than 100.");
-          }
-          if (
-            isHundredDolphins &&
-            isHundredKoalas &&
-            dolphins_avg == koalas_avg
-          ) {
-            console.log(
-              `Dolphin's Average is ${dolphins_avg} and Koala's Average is ${koalas_avg}`
-            );
-            console.log("The match is Draw !!");
-          } else if (
-            isHundredDolphins &&
-            isHundredKoalas &&
-            dolphins_avg > koalas_avg
-          ) {
-            console.log(
-              `Dolphin's Average is ${dolphins_avg} and Koala's Average is ${koalas_avg}`
-            );
-            console.log("Dolphins Wins !!");
-          } else if (
-            isHundredDolphins &&
-            isHundredKoalas &&
-            koalas_avg > dolphins_avg
-          ) {
-            console.log(
-              `Dolphin's Average is ${dolphins_avg} and Koala's Average is
+        var dolphins_avg = (dolphinScore1 + dolphinScore2 + dolphinScore3) / 3;
+        var isHundredKoalas = true;
+      } else {
+        console.log("Koalas - All scores are not Greater than 100.");
+      }
+      if (isHundredDolphins && isHundredKoalas && dolphins_avg == koalas_avg) {
+        console.log(
+          `Dolphin's Average is ${dolphins_avg} and Koala's Average is ${koalas_avg}`
+        );
+        console.log("The match is Draw !!");
+      } else if (
+        isHundredDolphins &&
+        isHundredKoalas &&
+        dolphins_avg > koalas_avg
+      ) {
+        console.log(
+          `Dolphin's Average is ${dolphins_avg} and Koala's Average is ${koalas_avg}`
+        );
+        console.log("Dolphins Wins !!");
+      } else if (
+        isHundredDolphins &&
+        isHundredKoalas &&
+        koalas_avg > dolphins_avg
+      ) {
+        console.log(
+          `Dolphin's Average is ${dolphins_avg} and Koala's Average is
 
-          ${koalas_avg}`
-            );
-            console.log("Koalas Wins !!");
-          } else {
-            console.log(
-              `Dolphin's Average is ${dolphins_avg} and Koala's Average is
+      ${koalas_avg}`
+        );
+        console.log("Koalas Wins !!");
+      } else {
+        console.log(
+          `Dolphin's Average is ${dolphins_avg} and Koala's Average is
 
-          ${koalas_avg}`
-            );
-            console.log("Better Luck Next Time !!");
-          }
-        </script>
-      </body>
-    </html>
+      ${koalas_avg}`
+        );
+        console.log("Better Luck Next Time !!");
+      }
+    </script>
   </body>
 </html>
