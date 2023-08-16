@@ -38,37 +38,50 @@
 
 
 
-var ch=prompt('Press 1 for Addition \nPress 2 for Subtraction\nPress 3 for Multiplication\nPress 4 for Division\nEnter your choice 1-4=');
+// var ch=prompt('Press 1 for Addition \nPress 2 for Subtraction\nPress 3 for Multiplication\nPress 4 for Division\nEnter your choice 1-4=');
 
-if(ch==1)
+// if(ch==1)
+// {
+//     var num1=parseInt(prompt('Enter first number='));
+//     var num2=parseInt(prompt('Enter second number='));
+
+//     var sum=num1+num2;
+//     document.write('Addition= '+sum);
+// }
+// if(ch==2)
+// {
+//     var num1=parseInt(prompt('Enter first number='));
+//     var num2=parseInt(prompt('Enter second number='));
+
+//     var sub=num1-num2;
+//     document.write('Subtraction= '+sub);  
+// }
+// if(ch==3)
+// {
+//     var num1=parseInt(prompt('Enter first number='));
+//     var num2=parseInt(prompt('Enter second number='));
+
+//     var multi=num1*num2;
+//     document.write('Multiplication= '+multi);  
+// }
+// if(ch==4)
+// {
+//     var num1=parseInt(prompt('Enter first number='));
+//     var num2=parseInt(prompt('Enter second number='));
+
+//     var div=num1/num2;
+//     document.write('Division= '+div);  
+// }
+
+
+var ch=prompt('Press + for Addition \nPress - for Subtraction\nPress * for Multiplication\nPress / for Division\nEnter your choice =');
+
+if(ch=='+' || ch=='-' || ch=="*" || ch=='/')
 {
     var num1=parseInt(prompt('Enter first number='));
     var num2=parseInt(prompt('Enter second number='));
 
-    var sum=num1+num2;
-    document.write('Addition= '+sum);
-}
-if(ch==2)
-{
-    var num1=parseInt(prompt('Enter first number='));
-    var num2=parseInt(prompt('Enter second number='));
-
-    var sub=num1-num2;
-    document.write('Subtraction= '+sub);  
-}
-if(ch==3)
-{
-    var num1=parseInt(prompt('Enter first number='));
-    var num2=parseInt(prompt('Enter second number='));
-
-    var multi=num1*num2;
-    document.write('Multiplication= '+multi);  
-}
-if(ch==4)
-{
-    var num1=parseInt(prompt('Enter first number='));
-    var num2=parseInt(prompt('Enter second number='));
-
-    var div=num1/num2;
-    document.write('Division= '+div);  
+    var sum=num1+ch+num2;
+    var result=eval(sum);
+    document.write('Result = '+result);
 }
