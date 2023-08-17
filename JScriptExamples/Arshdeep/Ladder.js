@@ -21,11 +21,3 @@ else if(p4Age>p1Age && p4Age>p2Age && p4Age>p3Age)
     document.write('Fourth person is oldest');
 }
 
-// var salary=parseInt(prompt('Enter a Salary'));
-// var yearOfService
-
-// if(yearOfService>5)
-// {
-// 	var bonus=(salary*5)/100;
-// 	document.write('Bonus = '+bonus)
-// }
