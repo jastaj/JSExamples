@@ -178,7 +178,7 @@
 // }
 
 
-// 4th Example
+// company gave bonus according to their working year
 
 var salary=parseFloat(prompt('Enter the amount of salary:'));
 var yearOfService=parseFloat(prompt('Enter the year of service:'));
