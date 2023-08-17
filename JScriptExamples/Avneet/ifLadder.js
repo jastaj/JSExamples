@@ -81,7 +81,7 @@ if(ch=='+' || ch=='-' || ch=="*" || ch=='/')
     var num1=parseInt(prompt('Enter first number='));
     var num2=parseInt(prompt('Enter second number='));
 
-    var sum=num1+ch+num2;
+    var sum=num1+ch+num2;   //3+2
     var result=eval(sum);
     document.write('Result = '+result);
 }
