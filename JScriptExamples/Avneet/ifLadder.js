@@ -150,29 +150,45 @@
 
 // To display the oldest among 4 persons
 
-var p1Age=parseInt(prompt('Enter age of first person'));
-var p2Age=parseInt(prompt('Enter age of second person'));
-var p3Age=parseInt(prompt('Enter age of third person'));
-var p4Age=parseInt(prompt('Enter age of fourth person'));
+// var p1Age=parseInt(prompt('Enter age of first person'));
+// var p2Age=parseInt(prompt('Enter age of second person'));
+// var p3Age=parseInt(prompt('Enter age of third person'));
+// var p4Age=parseInt(prompt('Enter age of fourth person'));
 
-// we can also use this---- if(p1Age>p2Age,p3Age,p4Age)
+// // we can also use this---- if(p1Age>p2Age,p3Age,p4Age)
 
-if(p1Age>p2Age && p1Age>p3Age && p1Age>p4Age)
+// if(p1Age>p2Age && p1Age>p3Age && p1Age>p4Age)
+// {
+//     document.write('1st person is old than other');
+// }
+
+// else if(p2Age>p1Age && p2Age>p3Age && p2Age>p4Age)
+// {
+//     document.write('2nd person is old than other');
+// }
+
+// else if(p3Age>p1Age && p3Age>p2Age && p3Age>p4Age)
+// {
+//     document.write('3rd person is old than other');
+// }
+
+// else if(p4Age>p1Age && p4Age>p2Age && p4Age>p3Age)
+// {
+//     document.write('4th person is old than other');
+// }
+
+
+// 4th Example
+
+var salary=parseFloat(prompt('Enter the amount of salary:'));
+var yearOfService=parseFloat(prompt('Enter the year of service:'));
+
+if(yearOfService>5)
 {
-    document.write('1st person is old than other');
+	var bonus=(salary*5)/100;
+	document.write('The amount of Bonus = '+bonus)
 }
-
-else if(p2Age>p1Age && p2Age>p3Age && p2Age>p4Age)
+else
 {
-    document.write('2nd person is old than other');
-}
-
-else if(p3Age>p1Age && p3Age>p2Age && p3Age>p4Age)
-{
-    document.write('3rd person is old than other');
-}
-
-else if(p4Age>p1Age && p4Age>p2Age && p4Age>p3Age)
-{
-    document.write('4th person is old than other');
+    document.write('They will not get any Bonus.')
 }
