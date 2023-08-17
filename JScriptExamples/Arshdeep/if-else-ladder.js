@@ -1,7 +1,7 @@
 var sub1=parseFloat(prompt('Enter marks of first subject'));
-var sub1=parseFloat(prompt('Enter marks of second subject'));
-var sub1=parseFloat(prompt('Enter marks of third subject'));
-var sub1=parseFloat(prompt('Enter marks of fourth subject'));
+var sub2=parseFloat(prompt('Enter marks of second subject'));
+var sub3=parseFloat(prompt('Enter marks of third subject'));
+var sub4=parseFloat(prompt('Enter marks of fourth subject'));
 
 var total=sub1+sub2+sub3+sub4;
 
