@@ -90,51 +90,60 @@
 
 // To print the divisons according to their marks
 
-var sub1=parseFloat(prompt('Enter marks of first subject = '));
-var sub2=parseFloat(prompt('Enter marks of second subject = '));
-var sub3=parseFloat(prompt('Enter marks of three subject = '));
-var sub4=parseFloat(prompt('Enter marks of fourth subject = '));
+// var sub1=parseFloat(prompt('Enter marks of first subject = '));
+// var sub2=parseFloat(prompt('Enter marks of second subject = '));
+// var sub3=parseFloat(prompt('Enter marks of three subject = '));
+// var sub4=parseFloat(prompt('Enter marks of fourth subject = '));
 
-var total=sub1+sub2+sub3+sub4;
-document.write('Total Marks = '+total);
+// var total=sub1+sub2+sub3+sub4;
+// document.write('Total Marks = '+total);
 
-var per=(total/400)*100;
-document.write('Percentage = '+per); 
+// var per=(total/400)*100;
+// document.write('Percentage = '+per); 
 
-if(per>=80 && per<=100)
-{
-<<<<<<< HEAD
-    document.write('Merit');
-}
-else if(per>=60 && per<80)
-{
-    document.write('First Division.');
-}
-else if(per>=50 && per<60)
-{
-    document.write('Second Division.');
-}
-else if(per>=40 && per<50)
-{
-    document.write('Third Division.');
-}
-else if(per>=0 && per<40)
-{
-    document.write('Fail');
-}
-// else if(per<40)
+// if(per>=80 && per<=100)
+// {
+//     document.write('Merit');
+// }
+// else if(per>=60 && per<80)
+// {
+//     document.write('First Division.');
+// }
+// else if(per>=50 && per<60)
+// {
+//     document.write('Second Division.');
+// }
+// else if(per>=40 && per<50)
+// {
+//     document.write('Third Division.');
+// }
+// else if(per>=0 && per<40)
+// {
+//     document.write('Fail');
+// }
+// // else if(per<40)
+// // {
+// //     document.write('Fail.')
+// // }
+// else
 // {
 //     document.write('Fail.')
 // }
+
+
+
+// Square or not
+
+var len=parseFloat(prompt('Enter the length = '));
+var brth=parseFloat(prompt('Enter the breadth = '));
+
+if(len==brth)
+{
+    console.log('It is Square');
+}
 else
 {
-    document.write('Fail.')
-=======
-    var num1=parseInt(prompt('Enter first number='));
-    var num2=parseInt(prompt('Enter second number='));
-
-    var sum=num1+ch+num2;   //3+2
-    var result=eval(sum);
-    document.write('Result = '+result);
->>>>>>> 5eb012a5e8b0f46b883fa16fee666749ad8312bc
+    console.log('It is Rectangle')
 }
+
+
