@@ -134,16 +134,45 @@
 
 // Square or not
 
-var len=parseFloat(prompt('Enter the length = '));
-var brth=parseFloat(prompt('Enter the breadth = '));
+// var len=parseFloat(prompt('Enter the length = '));
+// var brth=parseFloat(prompt('Enter the breadth = '));
 
-if(len==brth)
+// if(len==brth)
+// {
+//     document.write('It is Square');
+// }
+// else
+// {
+//     document.write('It is Rectangle')
+// }
+
+
+
+// To display the oldest among 4 persons
+
+var p1Age=parseInt(prompt('Enter age of first person'));
+var p2Age=parseInt(prompt('Enter age of second person'));
+var p3Age=parseInt(prompt('Enter age of third person'));
+var p4Age=parseInt(prompt('Enter age of fourth person'));
+
+// we can also use this---- if(p1Age>p2Age,p3Age,p4Age)
+
+if(p1Age>p2Age && p1Age>p3Age && p1Age>p4Age)
 {
-    console.log('It is Square');
+    document.write('1st person is old than other');
 }
-else
+
+else if(p2Age>p1Age && p2Age>p3Age && p2Age>p4Age)
 {
-    console.log('It is Rectangle')
+    document.write('2nd person is old than other');
 }
 
+else if(p3Age>p1Age && p3Age>p2Age && p3Age>p4Age)
+{
+    document.write('3rd person is old than other');
+}
 
+else if(p4Age>p1Age && p4Age>p2Age && p4Age>p3Age)
+{
+    document.write('4th person is old than other');
+}
