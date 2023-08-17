@@ -74,14 +74,105 @@
 // }
 
 
-var ch=prompt('Press + for Addition \nPress - for Subtraction\nPress * for Multiplication\nPress / for Division\nEnter your choice =');
+// var ch=prompt('Press + for Addition \nPress - for Subtraction\nPress * for Multiplication\nPress / for Division\nEnter your choice =');
 
-if(ch=='+' || ch=='-' || ch=="*" || ch=='/')
+// if(ch=='+' || ch=='-' || ch=="*" || ch=='/')
+// {
+//     var num1=parseInt(prompt('Enter first number='));
+//     var num2=parseInt(prompt('Enter second number='));
+
+//     var sum=num1+ch+num2;
+//     var result=eval(sum);
+//     document.write('Result = '+result);
+// }
+
+
+
+// To print the divisons according to their marks
+
+// var sub1=parseFloat(prompt('Enter marks of first subject = '));
+// var sub2=parseFloat(prompt('Enter marks of second subject = '));
+// var sub3=parseFloat(prompt('Enter marks of three subject = '));
+// var sub4=parseFloat(prompt('Enter marks of fourth subject = '));
+
+// var total=sub1+sub2+sub3+sub4;
+// document.write('Total Marks = '+total);
+
+// var per=(total/400)*100;
+// document.write('Percentage = '+per); 
+
+// if(per>=80 && per<=100)
+// {
+//     document.write('Merit');
+// }
+// else if(per>=60 && per<80)
+// {
+//     document.write('First Division.');
+// }
+// else if(per>=50 && per<60)
+// {
+//     document.write('Second Division.');
+// }
+// else if(per>=40 && per<50)
+// {
+//     document.write('Third Division.');
+// }
+// else if(per>=0 && per<40)
+// {
+//     document.write('Fail');
+// }
+// // else if(per<40)
+// // {
+// //     document.write('Fail.')
+// // }
+// else
+// {
+//     document.write('Fail.')
+// }
+
+
+
+// Square or not
+
+// var len=parseFloat(prompt('Enter the length = '));
+// var brth=parseFloat(prompt('Enter the breadth = '));
+
+// if(len==brth)
+// {
+//     document.write('It is Square');
+// }
+// else
+// {
+//     document.write('It is Rectangle')
+// }
+
+
+
+// To display the oldest among 4 persons
+
+var p1Age=parseInt(prompt('Enter age of first person'));
+var p2Age=parseInt(prompt('Enter age of second person'));
+var p3Age=parseInt(prompt('Enter age of third person'));
+var p4Age=parseInt(prompt('Enter age of fourth person'));
+
+// we can also use this---- if(p1Age>p2Age,p3Age,p4Age)
+
+if(p1Age>p2Age && p1Age>p3Age && p1Age>p4Age)
 {
-    var num1=parseInt(prompt('Enter first number='));
-    var num2=parseInt(prompt('Enter second number='));
+    document.write('1st person is old than other');
+}
 
-    var sum=num1+ch+num2;   //3+2
-    var result=eval(sum);
-    document.write('Result = '+result);
+else if(p2Age>p1Age && p2Age>p3Age && p2Age>p4Age)
+{
+    document.write('2nd person is old than other');
+}
+
+else if(p3Age>p1Age && p3Age>p2Age && p3Age>p4Age)
+{
+    document.write('3rd person is old than other');
+}
+
+else if(p4Age>p1Age && p4Age>p2Age && p4Age>p3Age)
+{
+    document.write('4th person is old than other');
 }
