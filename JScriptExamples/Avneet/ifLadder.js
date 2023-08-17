@@ -103,6 +103,7 @@ document.write('Percentage = '+per);
 
 if(per>=80 && per<=100)
 {
+<<<<<<< HEAD
     document.write('Merit');
 }
 else if(per>=60 && per<80)
@@ -128,4 +129,12 @@ else if(per>=0 && per<40)
 else
 {
     document.write('Fail.')
+=======
+    var num1=parseInt(prompt('Enter first number='));
+    var num2=parseInt(prompt('Enter second number='));
+
+    var sum=num1+ch+num2;   //3+2
+    var result=eval(sum);
+    document.write('Result = '+result);
+>>>>>>> 5eb012a5e8b0f46b883fa16fee666749ad8312bc
 }
