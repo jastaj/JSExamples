@@ -1,40 +1,82 @@
-var ch=prompt('Enter your choice from 1-7');
+// Print days of week using ifElse if ladder.
+// var ch=prompt('Enter your choice from 1-7');
 
-if(ch==1)
+// if(ch==1)
+// {
+//     document.write('Sunday');
+// }
+
+// else if(ch==2)
+// {
+//     document.write('Monday');
+// }
+
+// else if(ch==3)
+// {
+//     document.write('Tuesday');
+// }
+
+// else if(ch==4)
+// {
+//     document.write('Wednesday');
+// }
+
+// else if(ch==5)
+// {
+//     document.write('Thursday');
+// }
+
+// else if(ch==6)
+// {
+//     document.write('Friday');
+// }
+
+// else if(ch==7)
+// {
+//     document.write('Saturday');
+// }
+// else
+// {
+//     document.write('Invalid choice.')
+// }
+
+// Perform Addition,Subtraction,Multiplication and diviosion 
+
+var choice=prompt('Press 1 for Addition\nPress 2 for Subtraction\nPress 3 for Multiplication\nPress 4 for Division\nEnter your choice 1-4:');
+
+if(choice==1)
 {
-    document.write('Sunday');
+    var num1=parseInt(prompt('Enter first number:'));
+    var num2=parseInt(prompt('Enter second number:'));
+
+    var sum=num1+num2;
+    document.write('Addition='+sum);
 }
-
-if(ch==2)
+else if(choice==2)
 {
-    document.write('Monday');
+    var num1=parseInt(prompt('Enter first number:'));
+    var num2=parseInt(prompt('Enter second number:'));
+
+    var sub=num1-num2;
+    document.write('Subtraction='+sub);
 }
-
-if(ch==3)
+else if(choice==3)
 {
-    document.write('Tuesday');
+    var num1=parseInt(prompt('Enter first number:'));
+    var num2=parseInt(prompt('Enter second number:'));
+
+    var mul=num1*num2;
+    document.write('Multiplication='+mul);
 }
-
-if(ch==4)
+else if(choice==4)
 {
-    document.write('Wednesday');
-}
+    var num1=parseInt(prompt('Enter first number:'));
+    var num2=parseInt(prompt('Enter second number:'));
 
-if(ch==5)
-{
-    document.write('Thursday');
-}
-
-if(ch==6)
-{
-    document.write('Friday');
-}
-
-if(ch==7)
-{
-    document.write('Saturday');
+    var div=num1/num2;
+    document.write('Division='+div);
 }
 else
 {
-    document.write('Invalid choice.')
+    document.write('Invalid choice.');
 }
