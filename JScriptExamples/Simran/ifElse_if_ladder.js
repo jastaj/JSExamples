@@ -36,5 +36,5 @@ if(ch==7)
 }
 else
 {
-    document.write('Invalid ')
+    document.write('Invalid choice.')
 }
