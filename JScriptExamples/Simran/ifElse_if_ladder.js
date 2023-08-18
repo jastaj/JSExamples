@@ -95,3 +95,45 @@ if(choice_=='+' || choice_=='-' || choice_=='*' || choice_=='/')
     var result=eval(value);
     document.write('Result=',result);
 }
+
+// To print divisions according to the marks.
+
+var sub1=parseFloat(prompt('Enter marks of first subject:'));
+var sub2=parseFloat(prompt('Enter marks of second subject:'));
+var sub3=parseFloat(prompt('Enter marks of three subject:'));
+var sub4=parseFloat(prompt('Enter marks of fourth subject:'));
+
+var total=sub1+sub2+sub3+sub4;
+document.write('Total='+total);
+
+var per=(total/400)*100;
+document.write('Percentage='+per); 
+
+if(per>=80 && per<=100)
+{
+    document.write('Merit');
+}
+else if(per>=60 && per<80)
+{
+    document.write('First Division.');
+}
+else if(per>=50 && per<60)
+{
+    document.write('Second Division.');
+}
+else if(per>=40 && per<50)
+{
+    document.write('Third Division.');
+}
+else if(per>=0 && per<40)
+{
+    document.write('Fail');
+}
+else
+{
+    document.write('Fail.')
+}
+// else if(per<40)
+// {
+//     document.write('Fail.')
+// }
