@@ -34,3 +34,7 @@ if(ch==7)
 {
     document.write('Saturday');
 }
+else
+{
+    document.write('Invalid ')
+}
