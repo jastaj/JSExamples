@@ -26,24 +26,37 @@
 // console.log(`Fourth person with age:${guy4} is oldest`);
 
 // -----Solution 3-----
-var phy=parseInt(prompt("Enter Marks in Physics(/100) :"));
-var chem=parseInt(prompt("Enter Marks in Chemistry(/100) :"));
-var math=parseInt(prompt("Enter Marks in Math (/100):"));
-var percent=((phy+chem+math)/300)*100;
-if(percent>80)
-console.log(`Percentage is ${percent} with Grade-A`);
+// var phy=parseInt(prompt("Enter Marks in Physics(/100) :"));
+// var chem=parseInt(prompt("Enter Marks in Chemistry(/100) :"));
+// var math=parseInt(prompt("Enter Marks in Math (/100):"));
+// var percent=((phy+chem+math)/300)*100;
+// if(percent>80)
+// console.log(`Percentage is ${percent} with Grade-A`);
 
-if((percent>60)&&(percent<80))
-console.log(`Percentage is ${percent} with Grade-B`);
+// if((percent>60)&&(percent<80))
+// console.log(`Percentage is ${percent} with Grade-B`);
 
-if((percent>50)&&(percent<60))
-console.log(`Percentage is ${percent} with Grade-C`);
+// if((percent>50)&&(percent<60))
+// console.log(`Percentage is ${percent} with Grade-C`);
 
-if((percent>45)&&(percent<50))
-console.log(`Percentage is ${percent} with Grade-D`);
+// if((percent>45)&&(percent<50))
+// console.log(`Percentage is ${percent} with Grade-D`);
 
-if((percent>25)&&(percent<45))
-console.log(`Percentage is ${percent} with Grade-E`);
+// if((percent>25)&&(percent<45))
+// console.log(`Percentage is ${percent} with Grade-E`);
 
+// else
+// console.log(`Percentage is ${percent} with Grade-F`);
+
+// -----Solution 4-----
+var salary=parseInt(prompt("Enter Salary of employee :"));
+var service=parseInt(prompt("Enter years of service :"));
+var bonus=(salary*5)/100;
+if(service>5)
+{
+    console.log("Salary of employee: "+(salary+bonus)+" Including Bonus: "+bonus);
+}
 else
-console.log(`Percentage is ${percent} with Grade-F`);
+{
+    console.log("Employee can't receive bonus")
+}
