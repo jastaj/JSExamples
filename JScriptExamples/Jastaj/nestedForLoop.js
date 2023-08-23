@@ -36,9 +36,13 @@ var n=parseInt(prompt('How many rows'));
 for(var i=1;i<=n;i++)
 {
     var st="";
+    for(k=n-1;k>=i;k--)
+    {
+        st=st+" ";
+    }
     for(j=1;j<=i;j++)
     {
-        st=st+i+" ";
+        st=st+"*";
     }
     console.log(st);
 }
