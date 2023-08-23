@@ -81,14 +81,14 @@ var sum=0;
 var sign;
 for(i=1;i<=n;i++)
 {
-   if(i%2==0)
-	{
-		sum=sum+(-i);
-	}
-	else
-	{
-		sum=sum+i;
-	}
+//    if(i%2==0)
+// 	{
+// 		sum=sum+(-i);
+// 	}
+// 	else
+// 	{
+// 		sum=sum+i;
+// 	}
     sign=Math.pow(-1,i+1);
     sum=sum+(i*sign);
 }
