@@ -1,3 +1,5 @@
+// 1/1!, 2/2!, ...., n/n!
+
 var fact = 1;
 var sum = 0;
 var n = 4;
