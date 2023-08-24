@@ -81,8 +81,8 @@ for(i=1;i<=n;i++)
 	{
 		sum=sum+i;
 	}
-    sign=Math.pow(-1,i+1);
-    sum=sum+(i*sign);
+    // sign=Math.pow(-1,i+1);
+    // sum=sum+(i*sign);
 }
 
 console.log('Sum of series='+sum);
