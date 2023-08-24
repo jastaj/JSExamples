@@ -123,6 +123,8 @@
     // }
     // document.write('<br>')
     //console.log(st);
+
+    //Hollow Rectangle
     var n=parseInt(prompt('How many rows'));
     var m=parseInt(prompt('How many columns'));
     var i, j;
