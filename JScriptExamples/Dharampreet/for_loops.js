@@ -26,11 +26,34 @@
 // }
 
 // -----Prime Number-----
-var n=parseInt(prompt("Enter number to find it's prime  or not :"));
-var flag=0;
-for(i=2;i<n;i++)
+// var n=parseInt(prompt("Enter number to find it's prime  or not :"));
+// var flag=0;
+// for(i=2;i<n;i++)
+// {
+//     if(n%i==0)
+//     {
+//         flag=1;
+//         break;
+//     }
+// }
+// if(flag==0)
+// {
+//     console.log("Number is prime ");
+// }
+// else
+// {
+//     console.log("Number is not prime ");
+// }
+
+// -----Prime number from range-----
+var beg=parseInt(prompt("Enter first number of Range: "));
+var end=parseInt(prompt("Enter last number of Range: "));
+for(i=beg; i<=end; i++)
 {
-    if(n%i==0)
+for(j=2;j<i;j++)
+{
+    var flag=0;
+    if(i%j==0)
     {
         flag=1;
         break;
@@ -38,9 +61,6 @@ for(i=2;i<n;i++)
 }
 if(flag==0)
 {
-    console.log("Number is prime ");
+    console.log("Prime Number : "+i);
 }
-else
-{
-    console.log("Number is not prime ");
 }
