@@ -1,4 +1,4 @@
-// Print days of week using ifElse if ladder.
+// 1. Print days of week using ifElse if ladder.
 var ch=prompt('Enter your choice from 1-7');
 
 if(ch==1)
@@ -40,7 +40,7 @@ else
     document.write('Invalid choice.')
 }
 
-// Perform Addition,Subtraction,Multiplication and division 
+// 2. Perform Addition,Subtraction,Multiplication and division 
 
 var choice=prompt('Press 1 for Addition\nPress 2 for Subtraction\nPress 3 for Multiplication\nPress 4 for Division\nEnter your choice 1-4:');
 
@@ -96,7 +96,7 @@ if(choice_=='+' || choice_=='-' || choice_=='*' || choice_=='/')
     document.write('Result=',result);
 }
 
-// To print divisions according to the marks.
+// 3. To print divisions according to the marks.
 
 var sub1=parseFloat(prompt('Enter marks of first subject:'));
 var sub2=parseFloat(prompt('Enter marks of second subject:'));
@@ -137,3 +137,30 @@ else
 // {
 //     document.write('Fail.')
 // }
+
+
+// 4. Accepting the age of four people and display the oldest one.
+
+var p1Age=parseInt(prompt('Enter the age of first person:'));
+var p2Age=parseInt(prompt('Enter the age of second person:'));
+var p3Age=parseInt(prompt('Enter the age of third person:'));
+var p4Age=parseInt(prompt('Enter the age of fourth person:'));
+
+//if(p1Age>p2Age,p3Age,p4Age)
+if(p1Age>p2Age && p1Age>p3Age && p1Age>p4Age)
+{
+    document.write('First person is the oldest one.');
+}
+
+else if(p2Age>p3Age && p2Age>p4Age && p2Age>p1Age)
+{
+    document.write('Second person is the oldest one.');
+}
+else if(p3Age>p4Age && p3Age>p1Age && p3Age>p2Age)
+{
+    document.write('Third person is the oldest one.');
+}
+else if(p4Age>p1Age && p4Age>p2Age && p4Age>p3Age)
+{
+    document.write('Fourth person is the oldest one.');
+}
