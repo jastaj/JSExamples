@@ -12,9 +12,11 @@
 // document.write('Y='+y+'<br>');
 // document.write('Z='+z+'<br>');
 
-var num1=parseInt(prompt('Enter first number:'));
-var num2=parseInt(prompt('Enter second number:'));
 
-var result=num1+num2;
+// var num1=parseInt(prompt('Enter first number:'));
+// var num2=parseInt(prompt('Enter second number:'));
 
-console.log('Addition:'+result);
+// var result=num1+num2;
+
+// console.log('Addition:'+result);
+
