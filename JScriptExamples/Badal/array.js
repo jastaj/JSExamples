@@ -27,4 +27,10 @@ console.log(array);
 // to concatenate two arrays
 var newArray = [1,2,3, 'India'];
 var twoArray = array + newArray;
-console.log(twoArray);
+// console.log(twoArray);
+
+// to delete specific element in array
+
+array.splice(1,1);
+console.log(array);
+
