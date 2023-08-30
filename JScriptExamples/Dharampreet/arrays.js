@@ -65,17 +65,101 @@
 // console.log("Maximum element : "+min);
 
 // -----Array Pattrens-----
-var Ary_n=[9,15,7,20,11];
-for(a=0; a<Ary_n.length; a++)
+// var Ary_n=[9,15,7,20,11];
+// for(a=0; a<Ary_n.length; a++)
+// {
+// for(i=a; i<Ary_n.length; i++)
+// {
+//     var line="";
+//     for(j=a; j<=i; j++)
+//     {
+//         line=line+" "+Ary_n[j];
+//     }
+//     console.log(line);
+// }
+// console.log(" ");
+// }
+
+// ----- Array Second largest number -----
+var array_n=[89,15,77,20,11];
+// var Max=array_n[0];
+// var Max2=array_n[0];
+// var Max=0;
+// var Max2=0;
+// for(j=0; j<array_n.length; j++)
+// {
+//     if(array_n[j]>Max)
+//     {
+//         Max=array_n[j];
+//     }
+// }
+// console.log("Maximum number :"+Max);
+// for(i=0; i<array_n.length; i++)
+// {
+//     if(array_n[i]!=Max)
+//     {
+//         if(array_n[i]>Max2)
+//         {
+//             Max2=array_n[i];
+//         }
+//     }
+// }
+// console.log("Second Maximum number :"+Max2);
+
+// ----- Array Second Minimum number -----
+// var array_n=[9,15,45,20,11];
+// var Max=0;
+// var Max2=0;
+// for(j=0; j<array_n.length; j++)
+// {
+//     if(array_n[j]<Min)
+//     {
+//         Min=array_n[j];
+//     }
+// }
+// console.log("Minimum number : "+Min);
+// for(i=0; i<array_n.length; i++)
+// {
+//     if(array_n[i]!=Min)
+//     {
+//         if(array_n[i]<Min2)
+//         {
+//             Min2=array_n[i];
+//         }
+//     }
+// }
+// console.log("Second Minimum number : "+Min2);
+
+// ----- Second method -----
+// var array_n=[89,15,77,20,11];
+// var Max=0;
+// var Max2=0;
+// for(i=0; i<array_n.length; i++)
+// {
+//     if(array_n[i]>Max)
+//     {
+//         Max2=Max;
+//         Max=array_n[i];
+//     }
+//     else if(array_n[i]>Max2 && array_n[i]!=Max)
+//     {
+//         Max2=array_n[i]
+//     }
+// }
+// console.log("Second Maximum number :"+Max2);
+
+// ----- Bubble sort -----
+var array_n=[89,15,77,10,11];
+for(i=0; i<array_n.length; i++)
 {
-for(i=a; i<Ary_n.length; i++)
-{
-    var line="";
-    for(j=a; j<=i; j++)
+    for(j=0;j<array_n.length-1; j++)
     {
-        line=line+" "+Ary_n[j];
+        if(array_n[j]>array_n[j+1])
+        {
+            temp=array_n[j];
+            array_n[j]=array_n[j+1];
+            array_n[j+1]=temp;
+        }
     }
-    console.log(line);
 }
-console.log(" ");
-}
+console.log(array_n);
