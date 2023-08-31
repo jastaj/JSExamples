@@ -1,15 +1,15 @@
 // //to find maximum value
 
-var myArray=[5,77,45,80,16,52,68];
-var MAX=myArray[0];
-for(i=0; i<myArray.length; i++)
-{
-    if (MAX<myArray[i])
-    {
-        MAX=myArray[i];
-    }
-}
-console.log(MAX);
+// var myArray=[5,77,45,80,16,52,68];
+// var MAX=myArray[0];
+// for(i=0; i<myArray.length; i++)
+// {
+//     if (MAX<myArray[i])
+//     {
+//         MAX=myArray[i];
+//     }
+// }
+// console.log(MAX);
 
 
 //to find minimum value
