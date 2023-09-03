@@ -81,7 +81,7 @@
 // }
 
 // ----- Array Second largest number -----
-var array_n=[89,15,77,20,11];
+// var array_n=[89,15,77,20,11];
 // var Max=array_n[0];
 // var Max2=array_n[0];
 // var Max=0;
@@ -149,17 +149,59 @@ var array_n=[89,15,77,20,11];
 // console.log("Second Maximum number :"+Max2);
 
 // ----- Bubble sort -----
+// var array_n=[89,15,77,10,11];
+// for(i=0; i<array_n.length; i++)
+// {
+//     for(j=0;j<array_n.length-1; j++)
+//     {
+//         if(array_n[j]>array_n[j+1])
+//         {
+//             temp=array_n[j];
+//             array_n[j]=array_n[j+1];
+//             array_n[j+1]=temp;
+//         }
+//     }
+// }
+// console.log(array_n);
+
+// -----Binary Search-----
 var array_n=[89,15,77,10,11];
+array_n.sort();
+console.log(array_n);
+var beg=1;
+var end=array_n.length;
+var mid=Math.floor((beg+end)/2);
+var loc=-1;
+var flag=-1;
+var item=parseInt(prompt("Enter item to be searched : "));
+    
 for(i=0; i<array_n.length; i++)
 {
-    for(j=0;j<array_n.length-1; j++)
+    if(item==array_n[mid])
     {
-        if(array_n[j]>array_n[j+1])
+        loc=mid;
+        flag=0;
+        break;
+    }
+    else
+    {
+        if(item>array_n[mid])
         {
-            temp=array_n[j];
-            array_n[j]=array_n[j+1];
-            array_n[j+1]=temp;
+            beg=mid+1;
+        }
+        else if(item<array_n[mid])
+        {
+            end=mid-1;
         }
     }
+    mid=Math.floor((beg+end)/2);
 }
-console.log(array_n);
+
+if(flag==-1)
+{
+    console.log(`Item ${item} is not found at any location`);
+}
+else
+{
+    console.log(`Item ${item} is found at any location ${loc}`);
+}
