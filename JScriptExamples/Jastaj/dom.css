@@ -1,0 +1,10 @@
+#box
+{
+position:relative;
+top:150px;
+margin:0px auto;
+border:1px solid #000;
+width:200px;
+height:200px;
+text-align: center;
+}
