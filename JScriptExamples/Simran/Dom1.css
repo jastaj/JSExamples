@@ -1,0 +1,9 @@
+#box
+{
+    width:200px;
+    height: 200px;
+    background-color: burlywood;
+    border: 2px solid blue;
+    text-align: center;
+    margin: 0 auto;
+}

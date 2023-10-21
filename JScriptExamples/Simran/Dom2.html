@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Calculation</title>
+</head>
+<body>
+    Value A : <input type="text" id="txtBox1"><br>
+    Value B : <input type="text" id="txtBox2"><br>
+
+    Result : <input type="text" id="txtResult"><br>
+
+    <input type="button" value="Sum" onclick="Sum()">
+    <input type="button" value="Subtract" onclick="Sub()">
+    <input type="button" value="Multiply" onclick="Mul()">
+    <input type="button" value="Divide" onclick="Div()">
+
+    <script>
+        function Sum()
+        {
+            var val1 = document.getElementById("txtBox1").value;
+            var val2 = document.getElementById("txtBox2").value;
+            var result = parseInt(val1) + parseInt(val2);
+            // var result = val1 + val2;
+
+            document.getElementById("txtResult").value = result;
+        }
+
+        function Sub()
+        {
+            var val1 = document.getElementById("txtBox1").value;
+            var val2 = document.getElementById("txtBox2").value;
+            var result = parseInt(val1) - parseInt(val2);
+            // var result = val1 + val2;
+
+            document.getElementById("txtResult").value = result;
+        }
+
+        function Mul()
+        {
+            var val1 = document.getElementById("txtBox1").value;
+            var val2 = document.getElementById("txtBox2").value;
+            var result = parseInt(val1) * parseInt(val2);
+            // var result = val1 + val2;
+
+            document.getElementById("txtResult").value = result;
+        }
+
+        function Div()
+        {
+            var val1 = document.getElementById("txtBox1").value;
+            var val2 = document.getElementById("txtBox2").value;
+            var result = parseInt(val1) / parseInt(val2);
+            // var result = val1 + val2;
+
+            document.getElementById("txtResult").value = result;
+        }
+    </script>
+</body>
+</html>
