@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Value A: <input type="text" id="txtValue1"> <br>
+    Value B: <input type="text" id="txtValue2"><br>
+    Result: <input type="text" id="txtResult"> <br>
+
+    <input type="button" value="Sum" onclick="Sum()">
+
+    <script>
+        function Sum() {
+            var val1 = document.getElementById("txtValue1").value;
+            var val2 = document.getElementById("txtValue2").value;
+            var result = parseInt(val1) + parseInt(val2);
+            document.getElementById("txtResult").value = result;
+        }
+    </script>
+
+
+</body>
+
+
+</html>
